@@ -403,6 +403,7 @@ section {
 /*==================== ABOUT ====================*/
 .about__img {
   width: 200px;
+  background-color: var(--first-color);
   border-radius: .5rem;
   justify-self: center;
   align-self: center;
@@ -477,62 +478,9 @@ section {
   transition: .4s;
 }
 
-.skills__titles {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: var(--mb-0-5);
-}
-
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-}
-
-.skills__bar,
-.skills__percentage {
-  height: 5px;
-  border-radius: .25rem;
-}
-
-.skills__bar {
-  background-color: var(--first-color-lighter);
-}
-
-.skills__percentage {
-  display: block;
-  background-color: var(--first-color);
-}
-
-.skills__html {
-  width: 80%;
-}
-
-.skills__css {
-  width: 70%;
-}
-
-.skills__js {
-  width: 60%;
-}
-
-.skills__react {
-  width: 30%;
-}
-
-.skills__miro {
-  width: 90%;
-}
-
-.skills__balsamiq {
-  width: 85%;
-}
-
-.skills__figma {
-  width: 75%;
-}
-
-.skills__uxwriting {
-  width: 60%;
 }
 
 .skills__close .skills__list {
@@ -547,6 +495,29 @@ section {
 
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
+}
+
+/*==================== TOOLS ====================*/
+.tools__container {
+  max-width: 1000px;
+  overflow: initial;
+}
+
+.tools__content {
+  padding: 0 1.5rem;
+}
+
+.tools__img {
+  width: 70px;
+  height: 70px;
+  border-radius: .5rem;
+  justify-self: center;
+  margin-bottom: var(--mb-0-5);
+}
+
+.tools__title {
+  font-size: var(--small-font-size);
+  justify-self: center;
 }
 
 /*==================== QUALIFICATION ====================*/
@@ -694,6 +665,11 @@ section {
   display: flex;
 }
 
+.services__modal-service-span {
+  color: var(--title-color);
+  font-weight: 500;
+}
+
 .services__modal-title {
   font-size: var(--h3-font-size);
   font-weight: var(--font-medium);
@@ -808,29 +784,6 @@ section {
 .project__img {
   width: 300px;
   border-radius: .5rem;
-  justify-self: center;
-}
-
-/*==================== TOOLS ====================*/
-.tools__container {
-  max-width: 1000px;
-  overflow: initial;
-}
-
-.tools__content {
-  padding: 0 1.5rem;
-}
-
-.tools__img {
-  width: 70px;
-  height: 70px;
-  border-radius: .5rem;
-  justify-self: center;
-  margin-bottom: var(--mb-0-5);
-}
-
-.tools__title {
-  font-size: var(--small-font-size);
   justify-self: center;
 }
 

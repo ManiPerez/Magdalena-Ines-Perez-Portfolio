@@ -49,6 +49,36 @@ skillsHeader.forEach((el) => {
     el.addEventListener('click',toggleSkills);
 })
 
+/*==================== TOOLS ====================*/
+let swiperTools = new Swiper(".tools__container", {
+    loop: true,
+    spaceBetween: 10,
+    autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        0: {
+        slidesPerView: 2,
+        },
+        350: {
+        slidesPerView: 3,
+        },
+        450: {
+        slidesPerView: 4,
+        },
+        550: {
+        slidesPerView: 5,
+        },
+        650: {
+        slidesPerView: 6,
+        },
+        780: {
+        slidesPerView: 7,
+        }  
+    }
+});
+
 /*==================== QUALIFICATION TABS ====================*/
 const tabs = document.querySelectorAll('[data-target]'),
       tabContents = document.querySelectorAll('[data-content]');
@@ -105,56 +135,6 @@ let swiperPortfolio = new Swiper(".portfolio__container", {
       clickable: true,
     }
 });
-
-/*==================== TOOLS ====================*/
-let swiperTools = new Swiper(".tools__container", {
-    loop: true,
-    spaceBetween: 10,
-    autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        0: {
-        slidesPerView: 2,
-        },
-        350: {
-        slidesPerView: 3,
-        },
-        450: {
-        slidesPerView: 4,
-        },
-        550: {
-        slidesPerView: 5,
-        },
-        650: {
-        slidesPerView: 6,
-        },
-        780: {
-        slidesPerView: 7,
-        }  
-    }
-});
-
-/*==================== CONTACT ME form ====================*/
-const form = document.querySelector('form'),
-statusTxt = form.querySelector('.contact__btn-msg');
-
-form.onsubmit = (e) => {
-    e.preventDefault(); // prevent form from submitting
-    statusTxt.style.display = 'block';
-
-    let xhr =new XMLHttpRequest(); // creating new xml object
-    xhr.open("POST", "message.php", true); // sending POST request to message.php file
-    xhr.onload = () =>{ // once ajax loaded
-        if (xhr.readyState == 4 && xhr.status == 200){ // if ajax  response status is 200 & ready status is 4 means there is no error
-            let response = xhr.response; // storing ajax response in a response variable
-            console.log(response);
-        }
-    }
-    let formData = new FormData(form); //creating new formData obj. This obj is used to send form data
-    xhr.send(formData); //sending form data
-}
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]');
