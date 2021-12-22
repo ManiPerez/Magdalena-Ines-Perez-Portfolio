@@ -846,17 +846,7 @@ section {
   border: none;
 }
 
-.contact__success {
-  /* display: none; */
-  color: var(--text-color);
-  margin-left: var(--mb-1-5);
-}
 
-.success__icon {
-  /* display: none; */
-  color: var(--success-color);
-  font-size: 1.5rem;
-}
 
 /*==================== FOOTER ====================*/
 .footer {
