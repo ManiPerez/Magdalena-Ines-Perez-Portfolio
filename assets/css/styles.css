@@ -486,6 +486,7 @@ section {
 .skills__name {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
+  padding-left: 1rem;
 }
 
 .skills__close .skills__list {
@@ -500,6 +501,18 @@ section {
 
 .skills__open .skills__arrow {
   transform: rotate(-180deg);
+}
+
+.skills__data {
+  display: flex;
+}
+
+.skills__rounder {
+  align-self: center;
+  width: 10px;
+  height: 10px;
+  background-color: var(--first-color);
+  border-radius: 50%;
 }
 
 /*==================== TOOLS ====================*/
