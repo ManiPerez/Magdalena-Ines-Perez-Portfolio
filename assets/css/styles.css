@@ -19,6 +19,7 @@
     --container-color: #FFF;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
+    --success-color: #16A212;
 
     /*========== Font and typography ==========*/
     --body-font: 'Poppins', sans-serif;
@@ -77,6 +78,12 @@ body.dark-theme {
   --container-color: hsl(var(--hue-color), 29%, 16%);
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
+}
+
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 
@@ -841,10 +848,16 @@ section {
   border: none;
 }
 
-.contact__btn-msg {
-  display: none;
-  color: var(--text-color-light);
+.contact__success {
+  /* display: none; */
+  color: var(--text-color);
   margin-left: var(--mb-1-5);
+}
+
+.success__icon {
+  /* display: none; */
+  color: var(--success-color);
+  font-size: 1.5rem;
 }
 
 /*==================== FOOTER ====================*/
